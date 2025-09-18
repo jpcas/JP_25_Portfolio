@@ -1,0 +1,327 @@
+
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #ccc;
+  }
+
+.button {
+    color: #FFFFFF;
+    background-color: #00352F;
+    font-family: 'Arial', sans-serif;
+    padding: 10px;
+  }
+
+  .name {
+    color: #00352F;
+  }
+
+  .about {
+   color: white;
+   font: Lato;
+   font-size: 25px;
+   font-weight: 400;
+   white-space: 40px;
+  }
+  
+  .about-title {
+    color: #FFFFFF;
+    position: relative;
+    top: -45px; /* moves it up */
+  }
+  
+
+  /* styles.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #855006; /* Off white */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white; /* or any background color */
+  z-index: 1000;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #00352F;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: white; /* Lime green accent */
+}
+
+.landing {
+  background-image: url("imagines/jpc.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Full screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color: #855006; /* Adjust based on background */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6); /* Improve text readability */
+}
+
+.landing-content {
+  text-align: center;
+  margin-left: -350px;
+  margin-top: -350px;
+}
+
+.landing-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project {
+  display: flex;
+  gap: 20px; /* space between items */
+  justify-content: center; /* center them horizontally */
+  flex-wrap: wrap; /* allow wrapping on smaller screens */
+}
+
+.project figure {
+  text-align: center; /* centers captions under images */
+}
+
+.card_projects {
+  background-color: #c3b091;           /* White card background */
+  border-radius: 12px;              /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Subtle shadow */
+  padding: 100px;                    /* Space inside the card */
+  margin: 100px auto;                /* Space outside */
+  max-width: 1200px;                /* Keeps it centered and not too wide */
+  transition: transform 0.2s ease;
+}
+
+.card_projects:hover {
+  transform: translateY(-5px);      /* Lift on hover */
+}
+
+.card_projects h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.project {
+  display: flex;                    /* Make the figures line up */
+  flex-wrap: wrap;                  /* Wrap if screen is smaller */
+  justify-content: center;          /* Center them */
+  gap: 20px;
+  color: white;                        /* Spacing between figures */
+}
+
+.project figure {
+  text-align: center;
+}
+
+
+
+.skills-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.skills {
+  justify-content: center;
+}
+
+
+/* Each logo sits inside a box of the same size */
+.skill-icon {
+  width: 200px;       /* uniform box size */
+  height: 200px;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  background: #fff;   /* optional: makes it neat */
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 10px;
+}
+
+/* Logos resize to fit inside the box */
+.skill-icon img {
+  max-width: 80%;    /* scale proportionally */
+  max-height: 80%;
+  object-fit: contain;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Each project card has the same size */
+.project-card {
+  width: 350px;          /* fixed width for consistency */
+  height: 350px;         /* same height */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-betwecenen;
+  padding: 15px;
+  transition: transform 0.2s ease;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: center;     /* horizontal center */
+  min-height: 500px;       /* adjust section height */
+  text-align: center;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Images scale neatly inside */
+.project-card img {
+  max-width: 100%;
+  max-height: 220px;
+  object-fit: contain;   /* keeps aspect ratio */
+  border-radius: 8px;
+}
+
+/* Captions styled under images */
+.project-card figcaption {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+.certifications-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Each certification in the same card size */
+.cert-card {
+  width: 300px;          /* uniform width */
+  height: 380px;         /* uniform height */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  transition: transform 0.2s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Images scale neatly inside */
+.cert-card img {
+  max-width: 100%;
+  max-height: 280px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Captions under certificates */
+.cert-card figcaption {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+html {
+  scroll-padding-top: 80px; /* adjust to your header height */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* spacing between fields */
+  max-width: 600px;
+  margin: 0 auto; /* center form */
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: #ffffff; /* match your theme */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  resize: vertical; /* allow resizing of textarea */
+}
+
+.contact-form textarea {
+  min-height: 150px; /* make it a big text box */
+}
+
+.contact-form button {
+  padding: 14px;
+  background-color: #007BFF; /* modern blue */
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3; /* darker on hover */
+}
+
+
+
+
+
+
